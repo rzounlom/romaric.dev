@@ -121,10 +121,14 @@ const PortfolioLanding = () => {
               <div className="col-lg-12">
                 <div className="section-title text-center service-style--3 mb--30 mb_sm--0">
                   <h2 className="title">My Awesome Service</h2>
-                  <p>
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration.
-                  </p>
+                  <a href="/#contact">
+                    <p
+                      className="contact-link"
+                      style={{ color: "#f9004d", fontSize: "1.5rem" }}
+                    >
+                      Hire Me!
+                    </p>
+                  </a>
                 </div>
               </div>
             </div>
@@ -149,11 +153,15 @@ const PortfolioLanding = () => {
               <div className="row">
                 <div className="col-lg-12">
                   <div className="section-title text-center service-style--3 mb--30 mb_sm--0">
-                    <h2 className="title">My Latest Project</h2>
-                    <p>
-                      There are many variations of passages of Lorem Ipsum
-                      available, but the majority have suffered alteration.
-                    </p>
+                    <h2 className="title">My Latest Projects</h2>
+                    <a href="/#contact">
+                      <p
+                        className="contact-link"
+                        style={{ color: "#f9004d", fontSize: "1.5rem" }}
+                      >
+                        Hire Me!
+                      </p>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -180,7 +188,7 @@ const PortfolioLanding = () => {
       {/* End Portfolio Area */}
 
       {/* Start Blog Area */}
-      <div id="blog" className="fix">
+      {/* <div id="blog" className="fix">
         <div className="rn-blog-area ptb--120 bg_color--5 mb-dec--30">
           <div className="container">
             <div className="row align-items-end">
@@ -224,7 +232,7 @@ const PortfolioLanding = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* End Blog Area */}
 
       {/* Start COntact Area */}
