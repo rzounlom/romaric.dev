@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import ScrollToTop from "react-scroll-up";
 import { FiChevronUp } from "react-icons/fi";
 import HeaderThree from "../component/header/HeaderThree";
 import FooterTwo from "../component/footer/FooterTwo";
 import TabTwo from "../elements/tab/TabTwo";
 import ContactOne from "../elements/contact/ContactOne";
-import PortfolioList from "../elements/portfolio/PortfolioList";
+import PortfolioList, {
+  PortfolioListContent,
+} from "../elements/portfolio/PortfolioList";
 import ServiceList from "../elements/service/ServiceList";
 import BlogContent from "../elements/blog/BlogContent";
 import Helmet from "../component/common/Helmet";
@@ -21,6 +23,11 @@ const SlideList = [
   },
 ];
 const PortfolioLanding = () => {
+  const [portfolioCount, setPortfolioCount] = useState(false);
+  const toggleViewMore = () => {
+    setPortfolioCount(!portfolioCount);
+  };
+
   let title = "About Me",
     description =
       "I am a freelance web devloper based out of Indianaplis, IN passionate about all things JavaScript who loves building web and mobile applications with React and React Native ";
@@ -169,15 +176,18 @@ const PortfolioLanding = () => {
                 <PortfolioList
                   styevariation="text-center mt--40"
                   column="col-lg-4 col-md-6 col-sm-6 col-12"
-                  item="6"
+                  item={portfolioCount ? `${PortfolioListContent.length}` : "3"}
                 />
               </div>
               <div className="row">
                 <div className="col-lg-12">
                   <div className="view-more-btn mt--60 mt_sm--30 text-center">
-                    <a className="rn-button-style--2 btn-solid" href="/blog">
-                      <span>View More</span>
-                    </a>
+                    <button
+                      className="rn-button-style--2 btn-solid"
+                      onClick={toggleViewMore}
+                    >
+                      View More
+                    </button>
                   </div>
                 </div>
               </div>

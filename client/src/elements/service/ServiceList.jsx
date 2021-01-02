@@ -1,21 +1,23 @@
 import React, { Component } from "react";
-import { FiLayers, FiMonitor, FiLayout } from "react-icons/fi";
+import { FiLayers, FiMonitor } from "react-icons/fi";
+import { FaMobileAlt } from "react-icons/fa";
 
 const ServiceList = [
   {
-    icon: <FiLayout />,
+    icon: <FiMonitor />,
     title: "Website Development",
-    description: "Personal and Business Websites",
+    description: "Personal and Business Websites for reaching the world",
   },
   {
     icon: <FiLayers />,
     title: "Web Application Development",
-    description: "Web Applications that solve problems.",
+    description: "Web Applications built for problem-solving and efficiency",
   },
   {
-    icon: <FiMonitor />,
+    icon: <FaMobileAlt />,
     title: "Mobile Application Development",
-    description: "Mobile Applications for both IOS and Android.",
+    description:
+      "Beatiful and Perfomant Mobile Applications built for both IOS and Android",
   },
 ];
 
