@@ -23,7 +23,7 @@ const SlideList = [
 const PortfolioLanding = () => {
   let title = "About Me",
     description =
-      'There are many variations of passages of Lorem Ipsum available, but the majority have suffered <a href="#">alteration</a> in some form, by injected humour, or randomised words which dont look even slightly believable. If you are going to use a passage of Lorem Ipsum,';
+      "I am a freelance web devloper based out of Indianaplis, IN passionate about all things JavaScript who loves building web and mobile applications with React and React Native ";
   const PostList = BlogContent.slice(0, 3);
   return (
     <div>
@@ -89,7 +89,7 @@ const PortfolioLanding = () => {
                   <div className="thumbnail">
                     <img
                       className="w-100"
-                      src="/assets/images/about/about-7.jpg"
+                      src="/assets/images/about/profile.jpg"
                       alt="About Images"
                     />
                   </div>
