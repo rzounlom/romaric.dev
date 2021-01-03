@@ -9,7 +9,6 @@ import PortfolioList, {
   PortfolioListContent,
 } from "../elements/portfolio/PortfolioList";
 import ServiceList from "../elements/service/ServiceList";
-import BlogContent from "../elements/blog/BlogContent";
 import Helmet from "../component/common/Helmet";
 
 const SlideList = [
@@ -31,7 +30,6 @@ const PortfolioLanding = () => {
   let title = "About Me",
     description =
       "I am a freelance web devloper based out of Indianaplis, IN passionate about all things JavaScript who loves building web and mobile applications with React and React Native ";
-  const PostList = BlogContent.slice(0, 3);
   return (
     <div>
       <Helmet pageTitle="romaric.dev" />
