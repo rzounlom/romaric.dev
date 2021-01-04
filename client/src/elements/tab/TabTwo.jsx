@@ -51,7 +51,7 @@ class TabsTwo extends Component {
                         <li>
                           <a href="/service">
                             Full-stack Engineer
-                            <span> - Harmony Healcare IT</span>
+                            <span> - Harmony Healthcare IT</span>
                           </a>{" "}
                           2020 - Current
                         </li>

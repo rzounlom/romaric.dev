@@ -184,7 +184,7 @@ const PortfolioLanding = () => {
                       className="rn-button-style--2 btn-solid"
                       onClick={toggleViewMore}
                     >
-                      View More
+                      {portfolioCount ? "View Less" : "View More"}
                     </button>
                   </div>
                 </div>
