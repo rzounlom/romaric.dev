@@ -1,9 +1,6 @@
 import "./globals.scss";
 
-import { Inter } from "next/font/google";
 import type { Metadata } from "next";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "romaric.dev",
@@ -17,7 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className="flex min-h-screen min-w-screen flex-col">
+        {children}
+      </body>
     </html>
   );
 }
