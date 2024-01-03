@@ -17,4 +17,11 @@ body {
   font-family: "Space Grotesk", sans-serif;
   background-color: $black;
   color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .container {
+    max-width: 1440px;
+  }
 }
