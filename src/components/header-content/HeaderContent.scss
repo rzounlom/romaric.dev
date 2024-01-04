@@ -1,0 +1,25 @@
+@import "@/app/globals.scss";
+
+.header-content {
+  height: 85vh;
+  width: 100%;
+  border: 1px solid $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .header-content-img,
+  .header-content-desc {
+    height: 50%;
+    border: 1px solid $white;
+  }
+
+  .header-content-img {
+    width: 174px;
+    background-image: url("/img/profile/image-profile-mobile.webp");
+  }
+
+  .header-content-desc {
+    width: calc(100% - 16px);
+  }
+}

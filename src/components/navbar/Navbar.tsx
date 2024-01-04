@@ -1,33 +1,51 @@
+import "./Navbar.scss";
+
 import { FC } from "react";
 import Image from "next/image";
-import frontendMentorsIcon from "@/public/img/icons/icon-frontend-mentor.svg";
-import ghIcon from "@/public/img/icons/icon-github.svg";
-import linkedinIcon from "@/public/img/icons/icon-linkedin.svg";
-import twitterIcon from "@/public/img/icons/icon-twitter.svg";
 
 const Navbar: FC = () => {
   return (
-    <nav>
+    <nav className="w-full">
       <div className="logo">romaric.dev</div>
       <ul className="nav-links">
         <li>
           <a href="/">
-            <Image src={ghIcon} alt="GitHub icon" />
+            <Image
+              height={20}
+              width={20}
+              src={"/img/icons/icon-github.svg"}
+              alt="GitHub icon"
+            />
           </a>
         </li>
         <li>
           <a href="/">
-            <Image src={frontendMentorsIcon} alt="Frontend Mentor icon" />
+            <Image
+              height={20}
+              width={20}
+              src={"/img/icons/icon-frontend-mentor.svg"}
+              alt="Frontend Mentor icon"
+            />
           </a>
         </li>
         <li>
           <a href="/">
-            <Image src={linkedinIcon} alt="Linkedin icon" />
+            <Image
+              height={20}
+              width={20}
+              src={"/img/icons/icon-linkedin.svg"}
+              alt="Linkedin icon"
+            />
           </a>
         </li>
         <li>
           <a href="/">
-            <Image src={twitterIcon} alt="Twitter icon" />
+            <Image
+              height={20}
+              width={20}
+              src={"/img/icons/icon-twitter.svg"}
+              alt="Twitter icon"
+            />
           </a>
         </li>
       </ul>
